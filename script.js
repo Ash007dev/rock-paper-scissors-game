@@ -63,7 +63,7 @@ function computeRPS(userChoice) {
 
 function displayScores(userMove, compMove, wins, losses, ties, result) {
     return gameResult.innerHTML = `<p style="margin-top:50px;margin-bottom:30px;font-weight:bold;font-size:35px;">"${result}"</p>
-            <p style="font-weight:bold">You picked - <img src="${userMove}-emoji.png" style="height:60px">, Computer picked - <img src="${compMove}-emoji.png" style="height:60px">.</p>
+            <p style="font-weight:bold">You picked - <img src="images/${userMove}-emoji.png" style="height:60px">, Computer picked - <img src="images/${compMove}-emoji.png" style="height:60px">.</p>
             <p style="margin-top:50px;font-size:18px;font-weight:bold">Wins: ${wins}, Losses: ${losses}, Ties: ${ties}</p>`;
 
 }
