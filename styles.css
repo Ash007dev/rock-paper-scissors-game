@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 15px;
+}
+
+.gameImg{
+
+    height: 60px;
+}
+
+.gameButton{
+    border-radius: 70px;
+    border: solid;
+    border-color: white;
+    background-color: rgb(26, 26, 26);
+    padding: 30px 30px;
+    border-width: 3px;
+    margin-right: 10px;
+}
+
+.resetButton{
+
+    border: solid;
+    background-color: white;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    margin-top: 20px;
+}
