@@ -13,6 +13,7 @@ body{
 .gameImg{
 
     height: 60px;
+    cursor: pointer;
 }
 
 .gameButton{
@@ -33,4 +34,16 @@ body{
     width: 120px;
     font-weight: bold;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+.autoPlayButton{
+
+    border: solid;
+    background-color: white;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
 }
