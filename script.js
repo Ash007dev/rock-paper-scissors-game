@@ -1,4 +1,3 @@
-
 console.log(localStorage.getItem("scores"));
 let gameResult = document.querySelector('.gameResult');
 
