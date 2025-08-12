@@ -8,7 +8,8 @@ A simple **Rock - Paper - Scissors** game built with HTML,CSS and JavaScript.
 - Interactive UI with images for Rock, Paper, and Scissors
 - Persistent score tracking using `localStorage`
 - Reset button to clear scores
-- Fully responsive design
+- Fully responsive design - Can be played with both keyboard and clicks
+- Keyboard controls - **r** - Rock, **p** - Paper, **s** - scissors 
 
 ---
 
