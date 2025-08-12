@@ -22,11 +22,15 @@ if (scores === null){
 let isAutoPlay = false;
 let intervalId;
 
+document.querySelector('.autoPlayButton').addEventListener('click', () => {
+    autoPlay();
+});
+
 function autoPlay(){
 
     if(!isAutoPlay){
         isAutoPlay = true;
-        intervalId = setInterval(function() {
+        intervalId = setInterval(() => {
             const playerMove = compMove();
             computeRPS(playerMove);
         },1000)
@@ -57,6 +61,33 @@ function compMove(){
 
 }
 
+
+document.querySelector('.gameButton-rock').addEventListener('click', () => {
+    computeRPS('rock');
+});
+
+document.querySelector('.gameButton-paper').addEventListener('click', () => {
+    computeRPS('paper');
+});
+
+document.querySelector('.gameButton-scissors').addEventListener('click', () => {
+    computeRPS('scissors');
+});
+
+
+document.body.addEventListener('keydown', (event) => {
+    if(event.key == 'r'){
+        computeRPS('rock');
+    }
+
+    else if(event.key == 'p'){
+        computeRPS('paper');
+    }
+    else if(event.key == 's'){
+        computeRPS('scissors');
+    }
+});
+
 function computeRPS(userChoice) {
 
     let userMove = userChoice;
@@ -81,7 +112,6 @@ function computeRPS(userChoice) {
 
     localStorage.setItem("scores", JSON.stringify(scores));
 
-    console.log(displayScores(userMove, computerMove, scores.wins, scores.losses, scores.ties, result));
     return displayScores(userMove, computerMove, scores.wins, scores.losses, scores.ties, result);
 
 
@@ -98,6 +128,10 @@ function displayScores(userMove, computerMove, wins, losses, ties, result) {
             </p>`;
 
 }
+
+document.querySelector('.resetButton').addEventListener('click', () => {
+    resetScore();
+});
 
 function resetScore() {
     scores.wins = 0, scores.losses = 0, scores.ties = 0;
